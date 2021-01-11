@@ -1,0 +1,42 @@
+{
+  "appenders": {
+    "console": { "type": "console" },
+    "debug": {
+      "type": "dateFile",
+      "filename": "logs/debug.log",
+      "daysToKeep": 15,
+      "compress": true
+    },
+    "log": {
+      "type": "dateFile",
+      "filename": "logs/access.log",
+      "pattern": "-yyyy-MM-dd",
+      "category": "normal",
+      "level": "LOG"
+    },
+    "error": {
+      "type": "file",
+      "filename": "logs/error.log",
+      "maxLogSize": 20480,
+      "backups": 3,
+      "category": "error"
+    },
+    "rec": {
+      "type": "file",
+      "filename": "logs/record.log",
+      "maxLogSize": 20480,
+      "backups": 3,
+      "category": "record"
+    }
+  },
+  "categories": {
+    "default": {
+      "appenders": ["log", "console"],
+      "level": "info"
+    },
+    "error": {
+      "appenders": ["error"],
+      "level": "error"
+    }
+  }
+}

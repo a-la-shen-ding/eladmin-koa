@@ -1,0 +1,29 @@
+{
+  "name": "eladmin-koa",
+  "version": "1.0.0",
+  "description": "eladmin based on koa、@koa/router、koa-body、koa-jwt、log4js、sequelize",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eladmin",
+    "koa"
+  ],
+  "author": "a-la-shen-ding",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^10.0.0",
+    "dayjs": "^1.9.8",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-jwt": "^4.0.0",
+    "log4js": "^6.3.0",
+    "mysql2": "^2.2.5",
+    "node-crypt-tool": "^2.2.0",
+    "node-xlsx": "^0.15.0",
+    "sequelize": "^6.3.5"
+  }
+}
